@@ -22,9 +22,10 @@ public class MongoDbClient
         _database = _client.GetDatabase(configuration.CurrentValue.DatabaseName);
     }
 
-    public IMongoCollection<TDocument> GetCollection<TDocument>(string name)
+    public IMongoCollection<T> GetCollection<T>(string name)
     {
-        return _database.GetCollection<TDocument>(name);
+        var finalName = name ?? typeof(T).Name.ToLowerInvariant() + "s";
+        return _database.GetCollection<T>(finalName);
     }
 
     public MongoClient GetClient()

@@ -11,7 +11,7 @@ public class SongCommandServices : ISongCommandServices
 
     public SongCommandServices(IDocumentStore<Song> songStore)
     {
-        _songStore = songStore;    
+        _songStore = songStore;
     }
 
     public async Task AddSongAsync(CreateSongRequest request, CancellationToken cancellationToken)

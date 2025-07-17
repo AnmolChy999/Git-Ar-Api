@@ -14,9 +14,14 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.Configure<DocumentStoreConfiguration>(builder.Configuration.GetSection("ConnectionConfig"));
 builder.Services.AddSingleton<MongoDbClient>();
-builder.Services.AddSingleton<IDocumentStore<Song>>();
+builder.Services.AddSingleton(typeof(IDocumentStore<>), typeof(MongoDbStore<>));
+
+
+
 builder.Services.AddSingleton<ISongQueryServices, SongQueryServices>();
 builder.Services.AddSingleton<ISongCommandServices, SongCommandServices>();
+
+
 
 
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi

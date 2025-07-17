@@ -27,6 +27,7 @@ public class SongController : Controller
         return Ok(song);
     }
 
+    [HttpPost("song")]
     public async Task<IActionResult> AddSongAsync(CreateSongRequest request, CancellationToken cancellationToken)
     {
         await _commandServices.AddSongAsync(request, cancellationToken);
