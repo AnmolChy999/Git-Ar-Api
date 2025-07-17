@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "LFWvVxJrPRM=",
+  "dgSpecHash": "wyc6XLOPeuc=",
   "success": true,
-  "projectFilePath": "/home/anmol/Documents/Personal Projects/Song Tracking API/Songs/SongTrackingApi.csproj",
+  "projectFilePath": "/home/anmol/Documents/Personal Projects/SongStoreApi/SongTrackingApi.csproj",
   "expectedPackageFiles": [
     "/home/anmol/.nuget/packages/dnsclient/1.6.1/dnsclient.1.6.1.nupkg.sha512",
     "/home/anmol/.nuget/packages/microsoft.aspnetcore.openapi/9.0.4/microsoft.aspnetcore.openapi.9.0.4.nupkg.sha512",

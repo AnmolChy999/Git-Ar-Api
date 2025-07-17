@@ -668,11 +668,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/anmol/Documents/Personal Projects/Song Tracking API/Songs/SongTrackingApi.csproj",
+      "projectUniqueName": "/home/anmol/Documents/Personal Projects/SongStoreApi/SongTrackingApi.csproj",
       "projectName": "SongTrackingApi",
-      "projectPath": "/home/anmol/Documents/Personal Projects/Song Tracking API/Songs/SongTrackingApi.csproj",
+      "projectPath": "/home/anmol/Documents/Personal Projects/SongStoreApi/SongTrackingApi.csproj",
       "packagesPath": "/home/anmol/.nuget/packages/",
-      "outputPath": "/home/anmol/Documents/Personal Projects/Song Tracking API/Songs/obj/",
+      "outputPath": "/home/anmol/Documents/Personal Projects/SongStoreApi/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/anmol/.nuget/NuGet/NuGet.Config"
