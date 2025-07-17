@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "wyc6XLOPeuc=",
+  "dgSpecHash": "n1RMvuYb0u4=",
   "success": true,
   "projectFilePath": "/home/anmol/Documents/Personal Projects/SongStoreApi/SongTrackingApi.csproj",
   "expectedPackageFiles": [
@@ -12,6 +12,7 @@
     "/home/anmol/.nuget/packages/microsoft.win32.registry/5.0.0/microsoft.win32.registry.5.0.0.nupkg.sha512",
     "/home/anmol/.nuget/packages/mongodb.bson/3.4.1/mongodb.bson.3.4.1.nupkg.sha512",
     "/home/anmol/.nuget/packages/mongodb.driver/3.4.1/mongodb.driver.3.4.1.nupkg.sha512",
+    "/home/anmol/.nuget/packages/scalar.aspnetcore/2.6.3/scalar.aspnetcore.2.6.3.nupkg.sha512",
     "/home/anmol/.nuget/packages/sharpcompress/0.30.1/sharpcompress.0.30.1.nupkg.sha512",
     "/home/anmol/.nuget/packages/snappier/1.0.0/snappier.1.0.0.nupkg.sha512",
     "/home/anmol/.nuget/packages/system.buffers/4.5.1/system.buffers.4.5.1.nupkg.sha512",

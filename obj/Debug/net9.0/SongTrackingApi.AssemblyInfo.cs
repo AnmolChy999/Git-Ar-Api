@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SongTrackingApi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7efd449ad4b74d455dd03c0389d33d9a55466431")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1fb50d552789021647a33bc47862a7cb09302c65")]
 [assembly: System.Reflection.AssemblyProductAttribute("SongTrackingApi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SongTrackingApi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
