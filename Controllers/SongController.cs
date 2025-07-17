@@ -3,12 +3,14 @@ using SongStoreApi.Documents;
 using SongStoreApi.Services.Abstractions;
 
 
+
+[ApiController]
 [Route("songs/v1.0")]
 public class SongController : Controller
 {
-    private readonly ISongServices _songServices;
+    private readonly ISongQueryServices _songServices;
 
-    public SongController(ISongServices songServices)
+    public SongController(ISongQueryServices songServices)
     {
         _songServices = songServices;
     }

@@ -3,7 +3,8 @@ using SongStoreApi.Documents;
 using SongStoreApi.Services.Abstractions;
 
 namespace SongStoreApi.Services;
-public class SongServices : ISongServices
+
+public class SongQueryServices : ISongQueryServices
 {
     public HashSet<Song> GetSongsAsync(string songName, CancellationToken cancellationToken)
     {
