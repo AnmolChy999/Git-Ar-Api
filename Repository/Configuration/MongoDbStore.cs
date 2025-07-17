@@ -1,27 +1,30 @@
 using MongoDB.Driver;
+using SongStoreApi.Documents.Attributes;
+using SongStoreApi.Constants;
 
-public class MongoDBStore<T> where T : IDocument
+namespace SongStoreApi.Repository.Configuration;
+
+public class MongoDbStore<T> where T : IDocument
 {
     private readonly MongoDbClient _client;
     private readonly IMongoCollection<T> _collection;
-    private readonly ILogger<MongoDBStore<T>> _logger;
-    private readonly string _typeValue;
-    private readonly bool _useType;
+    private readonly ILogger<MongoDbStore<T>> _logger;
 
     public MongoDbStore(
-        ILogger<MongoDBStore<T>> logger,
+        ILogger<MongoDbStore<T>> logger,
         MongoDbClient client)
     {
         _logger = logger;
         _client = client;
-
-        SetupCollection(client).GetAwaiter().GetResult();
         _collection = client.GetCollection<T>(GetCollectionName());
+    }
 
-        // Attributes needed for this document
-        var useTypeAttribute = (UseDocumentTypeForQueryAttribute)Attribute.GetCustomAttribute(typeof(T), typeof(UseDocumentTypeForQueryAttribute)) ?? new UseDocumentTypeForQueryAttribute();
-        _useType = useTypeAttribute.Value;
-        _typeValue = useTypeAttribute.Name ?? typeof(TDocument).Name;
-        SetupIndexes();
+    private string GetCollectionName()
+    {
+        if (typeof(T).GetCustomAttributes(typeof(CollectionNameAttribute), true).FirstOrDefault() is CollectionNameAttribute collectionNameAttribute)
+        {
+            return collectionNameAttribute.Name;
+        }
+        return typeof(T).Name.ToLowerInvariant() + "s";
     }
 }

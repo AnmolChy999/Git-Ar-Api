@@ -1,3 +1,4 @@
+namespace SongStoreApi.Repository.Configuration;
 public class DocumentStoreConfiguration
 {
     public string ConnectionString { get; set; } = string.Empty;

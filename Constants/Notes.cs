@@ -1,3 +1,4 @@
+namespace SongStoreApi.Constants;
 public enum Note
 {
     A = 0,

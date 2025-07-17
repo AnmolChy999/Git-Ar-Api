@@ -1,4 +1,7 @@
 using MongoDB.Driver;
+using SongStoreApi.Constants;
+
+namespace SongStoreApi.Repository;
 
 public interface IDocumentStore<T> where T : IDocument
 {

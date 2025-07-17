@@ -1,3 +1,6 @@
+using SongStoreApi.Constants;
+
+namespace SongStoreApi.Documents;
 public class ChordShape : IDocument
 {
     public string? Id { get; set; }
