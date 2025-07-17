@@ -13,5 +13,5 @@ public class Song : IDocument
     public string Title { get; set; } = null!;
     public string Artist { get; set; } = null!;
     public bool haveLearned { get; set; } = false;
-    public ChordShape? Tuning { get; set; }
+    public Tuning? Tuning { get; set; }
 }
