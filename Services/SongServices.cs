@@ -1,3 +1,6 @@
+
+using SongStoreApi.Documents;
+
 public class SongServices
 {
     public HashSet<Song> GetSongsAsync(string songName, CancellationToken cancellationToken)

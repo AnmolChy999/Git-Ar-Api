@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/anmol/Documents/Personal Projects/Song Tracking API/SongTrackingApi/SongTrackingApi.csproj": {}
+    "/home/anmol/Documents/Personal Projects/SongStoreApi/SongTrackingApi.csproj": {}
   },
   "projects": {
-    "/home/anmol/Documents/Personal Projects/Song Tracking API/SongTrackingApi/SongTrackingApi.csproj": {
+    "/home/anmol/Documents/Personal Projects/SongStoreApi/SongTrackingApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/anmol/Documents/Personal Projects/Song Tracking API/SongTrackingApi/SongTrackingApi.csproj",
+        "projectUniqueName": "/home/anmol/Documents/Personal Projects/SongStoreApi/SongTrackingApi.csproj",
         "projectName": "SongTrackingApi",
-        "projectPath": "/home/anmol/Documents/Personal Projects/Song Tracking API/SongTrackingApi/SongTrackingApi.csproj",
+        "projectPath": "/home/anmol/Documents/Personal Projects/SongStoreApi/SongTrackingApi.csproj",
         "packagesPath": "/home/anmol/.nuget/packages/",
-        "outputPath": "/home/anmol/Documents/Personal Projects/Song Tracking API/SongTrackingApi/obj/",
+        "outputPath": "/home/anmol/Documents/Personal Projects/SongStoreApi/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/anmol/.nuget/NuGet/NuGet.Config"
@@ -51,6 +51,10 @@
             "MongoDB.Driver": {
               "target": "Package",
               "version": "[3.4.1, )"
+            },
+            "Scalar.AspNetCore": {
+              "target": "Package",
+              "version": "[2.6.3, )"
             }
           },
           "imports": [

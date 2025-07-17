@@ -1,5 +1,8 @@
 using Microsoft.Extensions.Options;
 using MongoDB.Driver;
+using SongStoreApi.Repository.Configuration;
+
+namespace SongStoreApi.Repository.Configuration;
 
 public class MongoDbClient
 {

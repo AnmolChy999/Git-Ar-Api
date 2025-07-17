@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "vsVwAeN2Gdp1dHjh+iYNamfa7KeX7LQ/lgfM8YS6ins=",
+  "Source": "SongTrackingApi",
+  "BasePath": "_content/SongTrackingApi",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
