@@ -1,8 +1,8 @@
 
 using SongStoreApi.Documents;
-using SongStoreApi.Services.Abstractions;
+using SongStoreApi.Services.Query.Abstractions;
 
-namespace SongStoreApi.Services;
+namespace SongStoreApi.Services.Query;
 
 public class SongQueryServices : ISongQueryServices
 {

@@ -1,7 +1,7 @@
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using SongStoreApi.Documents;
-using SongStoreApi.Services.Abstractions;
+using SongStoreApi.Services.Query.Abstractions;
 using SongStoreApi.Services.Command.Abstractions;
 
 

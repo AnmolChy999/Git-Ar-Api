@@ -3,8 +3,8 @@ using Scalar.AspNetCore;
 using SongStoreApi.Documents;
 using SongStoreApi.Repository;
 using SongStoreApi.Repository.Configuration;
-using SongStoreApi.Services;
-using SongStoreApi.Services.Abstractions;
+using SongStoreApi.Services.Query;
+using SongStoreApi.Services.Query.Abstractions;
 using SongStoreApi.Services.Command;
 using SongStoreApi.Services.Command.Abstractions;
 

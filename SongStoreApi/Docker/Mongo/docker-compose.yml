@@ -1,0 +1,34 @@
+version: '3.8'
+
+services:
+  mongodb:
+    image: mongo:latest
+    container_name: mongodb:localdev
+    hostname: mongoDB
+    ports:
+      - "27017:27017"  
+    environment:
+      MONGO_INITDB_DATABASE: songstore
+    volumes:
+      - mongo_data:/data/db
+
+volumes:
+  mongo_data:
+
+
+# services:
+#   mongodb:
+#     image: mongo:latest
+#     container_name: mongodb
+#     hostname: mongodb
+#     restart: on-failure
+#     environment:
+#       MONGO_INITDB_DATABASE: db
+#       MONGO_REPLICA_SET_NAME: rs0
+#     ports:
+#       - 27017:27017
+#     healthcheck:
+#       test: test $$(echo "rs.initiate().ok || rs.status().ok" | mongo -u $${MONGO_INITDB_ROOT_USERNAME} -p $${MONGO_INITDB_ROOT_PASSWORD} --quiet) -eq 1
+#       interval: 10s
+#       start_period: 30s
+#     command: "--bind_ip_all --replSet rs0"
