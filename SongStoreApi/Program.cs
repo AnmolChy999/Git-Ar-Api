@@ -1,12 +1,11 @@
 
 using Scalar.AspNetCore;
-using SongStoreApi.Documents;
-using SongStoreApi.Repository;
-using SongStoreApi.Repository.Configuration;
-using SongStoreApi.Services.Query;
-using SongStoreApi.Services.Query.Abstractions;
-using SongStoreApi.Services.Command;
-using SongStoreApi.Services.Command.Abstractions;
+using GitArApi.SongStoreApi.Repository.Configuration;
+using GitArApi.SongStoreApi.Services.Query;
+using GitArApi.SongStoreApi.Services.Query.Abstractions;
+using GitArApi.SongStoreApi.Services.Command;
+using GitArApi.SongStoreApi.Services.Command.Abstractions;
+using GitArApi.SongStoreApi.Repository;
 
 var builder = WebApplication.CreateBuilder(args);
 

@@ -1,6 +1,6 @@
-using SongStoreApi.Constants;
+namespace GitArApi.SongStoreApi.Documents;
 
-namespace SongStoreApi.Documents;
+using GitArApi.SongStoreApi.Constants;
 
 public class ChordShape : IDocument
 {

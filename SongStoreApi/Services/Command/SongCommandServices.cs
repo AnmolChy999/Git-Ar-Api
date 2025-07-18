@@ -1,9 +1,9 @@
-using SongStoreApi.Documents;
-using SongStoreApi.Repository;
-using SongStoreApi.Repository.Configuration;
-using SongStoreApi.Services.Command.Abstractions;
+namespace GitArApi.SongStoreApi.Services.Command;
 
-namespace SongStoreApi.Services.Command;
+using GitArApi.SongStoreApi.Contracts;
+using GitArApi.SongStoreApi.Documents;
+using GitArApi.SongStoreApi.Repository;
+using GitArApi.SongStoreApi.Services.Command.Abstractions;
 
 public class SongCommandServices : ISongCommandServices
 {

@@ -1,1 +1,1 @@
-namespace SongStoreApi.Contracts;
+namespace GitArApi.SongStoreApi.Contracts;

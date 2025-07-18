@@ -1,4 +1,4 @@
-namespace SongStoreApi.Constants;
+namespace GitArApi.SongStoreApi.Constants;
 public enum Note
 {
     A = 0,

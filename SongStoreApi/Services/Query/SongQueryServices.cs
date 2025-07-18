@@ -1,11 +1,18 @@
 
-using SongStoreApi.Documents;
-using SongStoreApi.Services.Query.Abstractions;
+namespace GitArApi.SongStoreApi.Services.Query;
 
-namespace SongStoreApi.Services.Query;
+using GitArApi.SongStoreApi.Documents;
+using GitArApi.SongStoreApi.Repository;
+using GitArApi.SongStoreApi.Services.Query.Abstractions;
 
 public class SongQueryServices : ISongQueryServices
 {
+    private readonly IDocumentStore<Song> _songStore;
+
+    public SongQueryServices(IDocumentStore<Song> songStore)
+    {
+        _songStore = songStore;
+    }
     public HashSet<Song> GetSongsAsync(string songName, CancellationToken cancellationToken)
     {
         var songs = new HashSet<Song>();
@@ -20,4 +27,15 @@ public class SongQueryServices : ISongQueryServices
         songs.Add(oneSong);
         return songs;
     }
+
+    public async Task<Song> GetSongByIdAsync(string id, CancellationToken cancellationToken)
+    {
+        var song = await _songStore.GetDocumentAsync(id, cancellationToken);
+        if (song == null)
+        {
+            return new();
+        }
+        return song;
+    }
+
 }

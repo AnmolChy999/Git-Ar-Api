@@ -1,4 +1,4 @@
-namespace SongStoreApi.Repository.Configuration;
+namespace GitArApi.SongStoreApi.Repository.Configuration;
 
 public class DocumentStoreConfiguration
 {

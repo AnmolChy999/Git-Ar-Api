@@ -1,8 +1,11 @@
+namespace GitArApi.SongStoreApi.Controllers;
+
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using SongStoreApi.Documents;
-using SongStoreApi.Services.Query.Abstractions;
-using SongStoreApi.Services.Command.Abstractions;
+using GitArApi.SongStoreApi.Documents;
+using GitArApi.SongStoreApi.Services.Query.Abstractions;
+using GitArApi.SongStoreApi.Services.Command.Abstractions;
+using GitArApi.SongStoreApi.Contracts;
 
 
 

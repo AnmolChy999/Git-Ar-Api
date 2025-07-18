@@ -1,6 +1,6 @@
+namespace GitArApi.SongStoreApi.Constants;
 using MongoDB.Bson;
 using MongoDB.Bson.Serialization.Attributes;
-using SongStoreApi.Constants;
 
 public class Tuning
 {

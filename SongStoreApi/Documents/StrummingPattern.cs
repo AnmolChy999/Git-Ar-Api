@@ -1,4 +1,4 @@
-namespace SongStoreApi.Documents;
+namespace GitArApi.SongStoreApi.Documents;
 public class StrummingPattern
 {
     public string? Pattern { get; set; }

@@ -1,4 +1,4 @@
-namespace SongStoreApi.Documents.Attributes;
+namespace GitArApi.SongStoreApi.Documents.Attributes;
 public sealed class CollectionNameAttribute : Attribute
 {
     public string Name { get; }

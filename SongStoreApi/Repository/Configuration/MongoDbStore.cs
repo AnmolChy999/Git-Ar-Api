@@ -1,9 +1,9 @@
 
-using MongoDB.Driver;
-using SongStoreApi.Constants;
-using SongStoreApi.Documents.Attributes;
+namespace GitArApi.SongStoreApi.Repository.Configuration;
 
-namespace SongStoreApi.Repository.Configuration;
+using MongoDB.Driver;
+using GitArApi.SongStoreApi.Constants;
+using GitArApi.SongStoreApi.Documents.Attributes;
 
 public class MongoDbStore<T> : IDocumentStore<T> where T : IDocument
 {
