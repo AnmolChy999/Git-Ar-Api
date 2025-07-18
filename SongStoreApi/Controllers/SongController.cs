@@ -6,8 +6,7 @@ using GitArApi.SongStoreApi.Documents;
 using GitArApi.SongStoreApi.Services.Query.Abstractions;
 using GitArApi.SongStoreApi.Services.Command.Abstractions;
 using GitArApi.SongStoreApi.Contracts;
-
-
+using Microsoft.AspNetCore.Mvc.Infrastructure;
 
 [ApiController]
 [Route("songs/v1.0")]
@@ -31,9 +30,16 @@ public class SongController : Controller
     }
 
     [HttpPost("song")]
-    public async Task<IActionResult> AddSongAsync(CreateSongRequest request, CancellationToken cancellationToken)
+    public async Task<IActionResult> AddSongAsync([FromBody] CreateSongRequest request, CancellationToken cancellationToken)
     {
         await _commandServices.AddSongAsync(request, cancellationToken);
         return Ok(new { message = "Song added successfully" });
     }
+
+    [HttpPut("song")]
+    public async Task<IActionResult> UpdateSongAsync([FromQuery] string id, [FromBody] UpdateSongRequest request, CancellationToken cancellationToken)
+    {
+        await _commandServices.UpdateSongAsync(id, request, cancellationToken);
+        return Ok(new { message = "Song updated successfully" });
+    } 
 }

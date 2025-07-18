@@ -4,6 +4,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="SongStoreApi.csproj" />
+    <ProjectReference Include="SongStoreApi/SongStoreApi.csproj" />
   </ItemGroup>
 </Project>

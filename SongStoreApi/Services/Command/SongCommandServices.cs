@@ -1,9 +1,11 @@
-namespace GitArApi.SongStoreApi.Services.Command;
 
 using GitArApi.SongStoreApi.Contracts;
 using GitArApi.SongStoreApi.Documents;
+using GitArApi.SongStoreApi.Mapper;
 using GitArApi.SongStoreApi.Repository;
 using GitArApi.SongStoreApi.Services.Command.Abstractions;
+
+namespace GitArApi.SongStoreApi.Services.Command;
 
 public class SongCommandServices : ISongCommandServices
 {
@@ -28,5 +30,18 @@ public class SongCommandServices : ISongCommandServices
             Tuning = request.Tuning
         };
         await _songStore.InsertAsync(song, cancellationToken);
+    }
+
+    public async Task UpdateSongAsync(string id, UpdateSongRequest request, CancellationToken cancellationToken)
+    {
+        var existing = await _songStore.GetDocumentAsync(id, cancellationToken);
+        if (request == null)
+        {
+            throw new InvalidDataException();
+        }
+        var mapper = new CreateSongRequestMapper();
+        var song = mapper.AutoMapUpdateSongRequestToSongDocument(request);
+        song.Id = id;
+        await _songStore.UpdateAsync(song, cancellationToken);
     }
 }
