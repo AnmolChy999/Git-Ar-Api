@@ -41,5 +41,12 @@ public class SongController : Controller
     {
         await _commandServices.UpdateSongAsync(id, request, cancellationToken);
         return Ok(new { message = "Song updated successfully" });
-    } 
+    }
+
+    [HttpDelete("song")]
+    public async Task<IActionResult> DeleteSongAsync([FromQuery]string id, CancellationToken cancellationToken)
+    {
+        await _commandServices.DeleteSongAsync(id, cancellationToken);
+        return Ok(new { message = "Song has been deleted successfully." });
+    }
 }

@@ -44,4 +44,14 @@ public class SongCommandServices : ISongCommandServices
         song.Id = id;
         await _songStore.UpdateAsync(song, cancellationToken);
     }
+
+    public async Task DeleteSongAsync(string id, CancellationToken cancellationToken)
+    {
+        var exists = _songStore.GetDocumentAsync(id, cancellationToken);
+        if (exists == null)
+        {
+            throw new Exception("Song doesn't exist");
+        }
+        await _songStore.DeleteAsync(id, cancellationToken);
+    }
 }
