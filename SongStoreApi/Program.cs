@@ -1,6 +1,6 @@
 
 using Scalar.AspNetCore;
-using GitArApi.SongStoreApi.Repository.Configuration;
+using GitArApi.Common.Mongo;
 using GitArApi.SongStoreApi.Services.Query;
 using GitArApi.SongStoreApi.Services.Query.Abstractions;
 using GitArApi.SongStoreApi.Services.Command;

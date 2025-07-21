@@ -1,4 +1,4 @@
-namespace GitArApi.SongStoreApi.Repository.Configuration;
+namespace GitArApi.Common.Mongo.Constants;
 
 public class DocumentStoreConfiguration
 {

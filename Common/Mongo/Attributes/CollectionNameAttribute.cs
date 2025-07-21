@@ -1,4 +1,4 @@
-namespace GitArApi.SongStoreApi.Documents.Attributes;
+namespace GitArApi.Common.Mongo.Attributes;
 public sealed class CollectionNameAttribute : Attribute
 {
     public string Name { get; }

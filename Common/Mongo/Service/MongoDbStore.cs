@@ -1,9 +1,10 @@
 
-namespace GitArApi.SongStoreApi.Repository.Configuration;
-
+using GitArApi.Common.Mongo.Constants;
+using GitArApi.Common.Mongo.Attributes;
+using Microsoft.Extensions.Logging;
 using MongoDB.Driver;
-using GitArApi.SongStoreApi.Constants;
-using GitArApi.SongStoreApi.Documents.Attributes;
+
+namespace GitArApi.Common.Mongo.Service;
 
 public class MongoDbStore<T> : IDocumentStore<T> where T : IDocument
 {
@@ -72,7 +73,7 @@ public class MongoDbStore<T> : IDocumentStore<T> where T : IDocument
 
             if (result.ModifiedCount == 1)
             {
-                return;
+                        return;
             }
 
             throw new Exception("Failed to update the document");

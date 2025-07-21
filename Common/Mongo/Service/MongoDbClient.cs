@@ -1,7 +1,10 @@
-namespace GitArApi.SongStoreApi.Repository.Configuration;
 
+using GitArApi.Common.Mongo.Constants;
+using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using MongoDB.Driver;
+
+namespace GitArApi.Common.Mongo.Service;
 
 public class MongoDbClient
 {

@@ -1,7 +1,7 @@
-namespace GitArApi.SongStoreApi.Repository;
-
 using MongoDB.Driver;
-using GitArApi.SongStoreApi.Constants;
+using GitArApi.Common.Mongo.Constants;
+
+namespace GitArApi.Common.Mongo;
 
 public interface IDocumentStore<T> where T : IDocument
 {
