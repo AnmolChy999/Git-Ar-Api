@@ -1,7 +1,6 @@
-namespace GitArApi.SongStoreApi.Contracts;
+using GitArApi.SongStoreApi.Constants;
 
-using GitArApi.SongStoreApi.Documents;
-using GitArApi.Common.Mongo;
+namespace GitArApi.SongStoreApi.Contracts;
 
 public class CreateSongRequest
 {

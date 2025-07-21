@@ -1,7 +1,7 @@
-namespace GitArApi.SongStoreApi.Constants;
 using MongoDB.Bson;
 using MongoDB.Bson.Serialization.Attributes;
 
+namespace GitArApi.SongStoreApi.Constants;
 public class Tuning
 {
     public string Name { get; set; } = "E-Standard";

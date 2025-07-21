@@ -1,9 +1,10 @@
-namespace GitArApi.SongStoreApi.Documents;
-
 using MongoDB.Bson;
 using MongoDB.Bson.Serialization.Attributes;
 using GitArApi.Common.Mongo.Attributes;
-using GitArApi.Common.Mongo;
+using GitArApi.Common.Mongo.Constants;
+using GitArApi.SongStoreApi.Constants;
+
+namespace GitArApi.SongStoreApi.Documents;
 [CollectionName("songs")]
 public class Song : IDocument
 {

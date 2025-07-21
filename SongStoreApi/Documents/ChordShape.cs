@@ -1,6 +1,7 @@
-namespace GitArApi.SongStoreApi.Documents;
+using GitArApi.Common.Mongo.Constants;
+using GitArApi.SongStoreApi.Constants;
 
-using GitArApi.Common.Mongo;
+namespace GitArApi.SongStoreApi.Documents;
 
 public class ChordShape : IDocument
 {

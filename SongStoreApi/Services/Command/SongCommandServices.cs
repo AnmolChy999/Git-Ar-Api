@@ -2,7 +2,7 @@
 using GitArApi.SongStoreApi.Contracts;
 using GitArApi.SongStoreApi.Documents;
 using GitArApi.SongStoreApi.Mapper;
-using GitArApi.SongStoreApi.Repository;
+using GitArApi.Common.Mongo;
 using GitArApi.SongStoreApi.Services.Command.Abstractions;
 
 namespace GitArApi.SongStoreApi.Services.Command;

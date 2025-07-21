@@ -1,4 +1,6 @@
-using GitArApi.Common.Mongo;
+using GitArApi.SongStoreApi.Constants;
+
+namespace GitArApi.SongStoreApi.Contracts;
 
 public class UpdateSongRequest
 {

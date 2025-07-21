@@ -1,6 +1,6 @@
-namespace GitArApi.SongStoreApi.Services.Command.Abstractions;
-
 using GitArApi.SongStoreApi.Contracts;
+
+namespace GitArApi.SongStoreApi.Services.Command.Abstractions;
 
 public interface ISongCommandServices
 {

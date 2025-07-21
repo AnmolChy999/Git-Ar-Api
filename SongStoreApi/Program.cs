@@ -5,8 +5,8 @@ using GitArApi.SongStoreApi.Services.Query;
 using GitArApi.SongStoreApi.Services.Query.Abstractions;
 using GitArApi.SongStoreApi.Services.Command;
 using GitArApi.SongStoreApi.Services.Command.Abstractions;
-using GitArApi.SongStoreApi.Repository;
-
+using GitArApi.Common.Mongo.Constants;
+using GitArApi.Common.Mongo.Service;
 var builder = WebApplication.CreateBuilder(args);
 
 

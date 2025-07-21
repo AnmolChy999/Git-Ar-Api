@@ -1,4 +1,3 @@
-namespace GitArApi.SongStoreApi.Controllers;
 
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
@@ -6,7 +5,8 @@ using GitArApi.SongStoreApi.Documents;
 using GitArApi.SongStoreApi.Services.Query.Abstractions;
 using GitArApi.SongStoreApi.Services.Command.Abstractions;
 using GitArApi.SongStoreApi.Contracts;
-using Microsoft.AspNetCore.Mvc.Infrastructure;
+
+namespace GitArApi.SongStoreApi.Controllers;
 
 [ApiController]
 [Route("songs/v1.0")]

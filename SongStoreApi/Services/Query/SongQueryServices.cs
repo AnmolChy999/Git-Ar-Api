@@ -2,8 +2,8 @@
 namespace GitArApi.SongStoreApi.Services.Query;
 
 using GitArApi.SongStoreApi.Documents;
-using GitArApi.SongStoreApi.Repository;
 using GitArApi.SongStoreApi.Services.Query.Abstractions;
+using GitArApi.Common.Mongo;
 
 public class SongQueryServices : ISongQueryServices
 {
