@@ -9,7 +9,7 @@ using GitArApi.SongStoreApi.Contracts;
 namespace GitArApi.SongStoreApi.Controllers;
 
 [ApiController]
-[Route("songs/v1.0")]
+[Route("song/v1.0")]
 public class SongController : Controller
 {
     private readonly ISongQueryServices _songServices;
