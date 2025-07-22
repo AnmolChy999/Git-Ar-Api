@@ -1,4 +1,5 @@
 using GitArApi.AuthServiceApi.Documents;
+using GitArApi.AuthServiceApi.Services.Command.Abstractions;
 using GitArApi.Common.Mongo;
 using Microsoft.AspNetCore.Mvc;
 
@@ -8,7 +9,20 @@ namespace GitArApi.AuthServiceApi.Controllers;
 [Route("auth/v1.0")]
 public class AuthController : Controller
 {
-    // private readonly IDocumentStore<User> _userStore;
+    private readonly IAuthService _authService;
 
-    // public Auth
+    private readonly HttpContextAccessor _contextAccessor;
+
+    public AuthController
+    (
+        IAuthService authService,
+        HttpContextAccessor contextAccessor
+    )
+    {
+        _authService = authService;
+        _contextAccessor = contextAccessor;
+    }
+
+    
+    
 }

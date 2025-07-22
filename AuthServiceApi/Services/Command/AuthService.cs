@@ -16,9 +16,16 @@ public class AuthService : IAuthService
     {
         _userStore = userStore;
     }
-    public Task LoginUserAsync(UserLoginRequest request, CancellationToken cancellationToken)
+    public async Task LoginUserAsync(UserLoginRequest request, CancellationToken cancellationToken)
     {
-        throw new NotImplementedException();
+        var existingFilter = Builders<User>.Filter.Eq(u => u.UserName, request.UserName);
+        var exists = await _userStore.GetDocumentAsync(existingFilter, cancellationToken);
+        if (exists == null)
+        {
+            throw new Exception("User not found");
+        }
+        return;
+
     }
 
     public async Task RegisterUserAsync(UserRegisterRequest request, CancellationToken cancellationToken)
