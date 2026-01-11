@@ -1,3 +1,4 @@
+using GitArApi.AuthServiceApi.Contracts;
 using GitArApi.AuthServiceApi.Documents;
 using GitArApi.AuthServiceApi.Services.Command.Abstractions;
 using GitArApi.Common.Mongo;
@@ -23,6 +24,17 @@ public class AuthController : Controller
         _contextAccessor = contextAccessor;
     }
 
-    
-    
+    [HttpPost("register")]
+    public async Task<IActionResult> RegisterUser(UserRegisterRequest request, CancellationToken cancellationToken)
+    {
+        await _authService.RegisterUserAsync(request, cancellationToken);
+        return Ok();
+    }
+
+    [HttpPost("login")]
+    public async Task<IActionResult> LoginUser(UserLoginRequest request, CancellationToken cancellationToken)
+    {
+        var token = await _authService.LoginUserAsync(request, cancellationToken);
+        return Ok(token);
+    }
 }
